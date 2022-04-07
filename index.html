@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Mi Portafolio</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/carlos.jpg" alt="Foto de Carlos Moreno" class="header-img"/>
+      <h1 class="header">Carlos Moreno</h1>
+      <h2 class="subtitle">Web Developer</h2>
+      <nav>
+        <ul class="navigation">
+          <li class="nav-item"><a href="/acerca-de">Acerca de</a></li>
+          <li class="nav-item"><a href="/proyectos">Mis Proyectos</a></li>
+          <li class="nav-item"><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+ 
+    <main id="main">
+      <section>
+        <h2 class="subtitle">Acerca de</h2>
+        <p class="intro">
+          Hola! Me llamo Carlos Moreno. 
+          Soy ingeniero técnico de telecomunicaciones y superior de informática.
+          Mi pasión es la tecnología 💻 y dar clases. Durante muchos años he ido 
+          compaginado ambas cosas por separado y ahora he conseguido unir ambas 
+          en un único trabajo.
+          Creo que hay que modernizar la forma de educar. Se sigue enseñando
+          de una forma muy similar a hace 50 años y es necesario enseñar 
+          de otra forma.</p>
+        <ul class="social-media">
+          <li>
+            <a href="https://twitter.com/cmzumel" target="_blank">
+              <img src="images/twitter.png" alt="Twitter"/>
+              <p class="social-link-text">Twitter</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Ramm0nD" target="_blank">
+              <img src="images/github-logo.png" alt="GitHub"/>
+              <p class="social-link-text">GitHub</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/cmzumel/" target="_blank">
+              <img src="images/linkedin.png" alt="LinkedIn"/>
+              <p class="social-link-text">LinkedIn</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+  
+      <section>
+        <h2 class="subtitle">Mis Proyectos</h2>
+        <div class="carousel">
+          <button class="arrow arrow-left" aria-label="Botón proyecto anterior"></button>
+          <div class="window">
+            <ul class="project-container">
+              <li class="project1-container">
+                <button class="project1 project">
+                  <img src="images/project1.png" class="project-img" alt="Proyecto Aqoin"/>
+                </button>
+              </li>
+              <li class="project2-container">
+                <button class="project2 project">
+                  <img src="images/project2.png" class="project-img" alt="Proyecto MundoNipon"/>
+                </button>
+              </li>
+              <li class="project3-container">
+                <button class="project3 project">
+                  <img src="images/project3.png"class="project-img" alt="Proyecto Paraisoft"/>
+                </button>
+              </li>
+              <li class="project4-container" aria-hidden="true">
+                <button class="project4 project" tabindex="-1">
+                  <img src="images/project4.png" class="project-img" alt="Proyecto Whatsapp Shadow"/>
+                </button>
+              </li>
+              <li class="project5-container" aria-hidden="true">
+                <button class="project5 project" tabindex="-1">
+                  <img src="images/project5.png" class="project-img" alt="Proyecto Hello, World!"/>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button class="arrow arrow-right" aria-label="Botón proyecto siguiente"></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="contact-section">
+      <h2 class="header">Contacto</h2>
+      <p class="intro">Para manderme un mensaje puedes usar este formulario</p>
+      <form class="form-container">
+        <label class="form-label">Nombre</label><input type="text" aria-label="nombre" id="name"/> 
+        <span id="name-error" aria-live="assertive"></span>
+        <br />
+        <label class="form-label">Correo</label><input type="text" aria-label="correo"/> <br />
+        <label class="message-input">Mensaje<input type="text" /> <br /></label>
+        <button class="send-button" type="button">Enviar</button>
+      </form>
+    </footer>
+
+    <div class="notification" aria-live="assertive"></div>
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="header" id="modal-header" tabindex="0">Uno de mis proyectos</h2>
+        <img src="images/project1.png" class="modal-project-image" alt="un pantallazo de mi project"/>
+        <button class="modal-button">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
